@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gacha10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="265dp">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_alignParentTop='true'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size5dp">
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_weight = "0.2"
+                android:layout_height="wrap_content"
+                android:textSize = "@dimen/size20sp"
+                android:text="等級:" />
+
+            <TextView
+                android:id="@+id/rank_rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.15"
+                android:textSize = "@dimen/size20sp"
+                android:text="錢：" />
+
+            <TextView
+                android:id="@+id/money_money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.45"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                android:text="G" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size500dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/size30dp"
+                android:layout_marginTop="@dimen/size30dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/gacha1"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size15dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha2"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size15dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha3"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size15dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/size30dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/gacha4"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size3dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size3dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha5"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size3dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size3dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha6"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size3dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size3dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha7"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size3dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size3dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/size30dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/gacha8"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size15dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha9"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size15dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+                <ImageButton
+                    android:id="@+id/gacha10"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/black_circle"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size15dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/define"
+                    android:layout_width="@dimen/size95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/size3dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size3dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center"
+                    android:text="確定" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom = 'true'
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_alignParentLeft='true'
+                android:id="@+id/home"
+                android:layout_width="@dimen/size80dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="主窩" />
+
+            <Button
+                android:id="@+id/character"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size100dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="喵咪" />
+
+            <Button
+                android:id="@+id/team"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size200dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="編隊" />
+
+            <Button
+                android:id="@+id/gacha"
+                android:layout_alignParentRight='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="召喚" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

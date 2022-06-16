@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="265dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/character8_skill2_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="技能詳情"
+                android:layout_gravity="center"
+                android:textSize="@dimen/size20sp" />
+            <TextView
+                android:id="@+id/character8_skill2_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/size30dp"
+                android:layout_marginBottom="@dimen/size20dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:gravity="center"
+                android:text="[自動發動]被攻擊時，自身100%的機率回復最大HP的1%"
+                android:textSize="@dimen/size20sp" />
+            <TextView
+                android:id="@+id/character8_skill2_level_up_effect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="等級上升效果"
+                android:textSize="@dimen/size10sp"
+                android:layout_gravity="center"/>
+            <ScrollView
+                android:id="@+id/contencrollView"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_white"
+                android:layout_height="@dimen/size250dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/character8_skill2_lv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.2    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.3    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.4    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.5    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.6    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.7    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.8    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.9    回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                    <TextView
+                        android:id="@+id/character8_skill2_lv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/size5dp"
+                        android:layout_marginRight="@dimen/size5dp"
+                        android:text="Lv.10  回復增加1%"
+                        android:textSize="@dimen/size25sp" />
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <Button
+                    android:id="@+id/character8_skill2_level_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:background="@drawable/button_darkblue"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="升級技能"
+                    android:textSize="@dimen/size20sp"
+                    tools:srcCompat="@drawable/iori" />
+
+                <Button
+                    android:id="@+id/character8_skill2_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:background="@drawable/button_darkblue"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="關閉"
+                    android:textSize="@dimen/size20sp"
+                    tools:srcCompat="@drawable/iori" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

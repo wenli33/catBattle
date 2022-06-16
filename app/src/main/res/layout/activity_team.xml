@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="-111dp">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_alignParentTop='true'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size5dp">
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_weight = "0.2"
+                android:layout_height="wrap_content"
+                android:textSize = "@dimen/size20sp"
+                android:text="等級:" />
+
+            <TextView
+                android:id="@+id/rank_rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.15"
+                android:textSize = "@dimen/size20sp"
+                android:text="錢：" />
+
+            <TextView
+                android:id="@+id/money_money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.45"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                android:text="G" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_below="@+id/top"
+            android:id="@+id/contencrollView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size500dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team1"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="隊伍1" />
+
+                    <TextView
+                        android:id="@+id/power_1"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="戰力：" />
+
+                    <TextView
+                        android:id="@+id/power_power_1"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageButton
+                        android:id="@+id/team1Leader"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/black_circle"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/team1member1"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/black_carton"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/team1member2"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/orange_carton"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team2"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="隊伍2" />
+
+                    <TextView
+                        android:id="@+id/power_2"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="戰力：" />
+
+                    <TextView
+                        android:id="@+id/power_power_2"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/team2Leader"
+                            android:layout_width="@dimen/size120dp"
+                            android:layout_height="@dimen/size120dp"
+                            android:background="@drawable/orange_circle"
+                            android:layout_marginLeft="@dimen/size3dp"
+                            android:layout_marginTop="@dimen/size3dp"
+                            android:layout_marginRight="@dimen/size3dp"
+                            android:layout_marginBottom="@dimen/size3dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/team2member1"
+                            android:layout_width="@dimen/size120dp"
+                            android:layout_height="@dimen/size120dp"
+                            android:background="@drawable/black_triangle"
+                            android:layout_marginLeft="@dimen/size3dp"
+                            android:layout_marginTop="@dimen/size3dp"
+                            android:layout_marginRight="@dimen/size3dp"
+                            android:layout_marginBottom="@dimen/size3dp"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/team2member2"
+                            android:layout_width="@dimen/size120dp"
+                            android:layout_height="@dimen/size120dp"
+                            android:background="@drawable/black_strip"
+                            android:layout_marginLeft="@dimen/size3dp"
+                            android:layout_marginTop="@dimen/size3dp"
+                            android:layout_marginRight="@dimen/size3dp"
+                            android:layout_marginBottom="@dimen/size3dp"
+                            android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team3"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="隊伍3" />
+
+                    <TextView
+                        android:id="@+id/power_3"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="戰力：" />
+
+                    <TextView
+                        android:id="@+id/power_power_3"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/team3Leader"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/white_circle"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/team3member1"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/white_carton"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:id="@+id/team3member2"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/orange_strip"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/team4"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="隊伍4" />
+
+                    <TextView
+                        android:id="@+id/power_4"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="戰力：" />
+                    <TextView
+                        android:id="@+id/power_power_4"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/size20sp"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/team4Leader"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/white_triangle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/team4member1"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/orange_triangle"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1"
+                       />
+
+                    <ImageButton
+                        android:id="@+id/team4member2"
+                        android:layout_width="@dimen/size120dp"
+                        android:layout_height="@dimen/size120dp"
+                        android:background="@drawable/white_strip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/size3dp"
+                        android:layout_marginTop="@dimen/size3dp"
+                        android:layout_marginRight="@dimen/size3dp"
+                        android:layout_marginBottom="@dimen/size3dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom = 'true'
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_alignParentLeft='true'
+                android:id="@+id/home"
+                android:layout_width="@dimen/size80dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="主窩" />
+
+            <Button
+                android:id="@+id/character"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size100dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="喵咪" />
+
+            <Button
+                android:id="@+id/team"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size200dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="編隊" />
+
+            <Button
+                android:id="@+id/gacha"
+                android:layout_alignParentRight='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="召喚" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

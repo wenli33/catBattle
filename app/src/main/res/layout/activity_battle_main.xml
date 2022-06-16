@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".battle_main">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="265dp">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_alignParentTop='true'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size5dp">
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_weight = "0.2"
+                android:layout_height="wrap_content"
+                android:textSize = "@dimen/size20sp"
+                android:text="等級:" />
+
+            <TextView
+                android:id="@+id/rank_rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.15"
+                android:textSize = "@dimen/size20sp"
+                android:text="錢：" />
+
+            <TextView
+                android:id="@+id/money_money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.45"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                android:text="G" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size550dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/easy"
+                android:layout_width="@dimen/size300dp"
+                android:layout_height="@dimen/size100dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginTop="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:layout_marginBottom="@dimen/size5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/size35sp"
+                android:background=  "@drawable/easy" />
+
+            <ImageButton
+                android:id="@+id/normal"
+                android:layout_width="@dimen/size300dp"
+                android:layout_height="@dimen/size100dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginTop="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:layout_marginBottom="@dimen/size5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/size35sp"
+                android:background=  "@drawable/normal" />
+
+            <ImageButton
+                android:id="@+id/hard"
+                android:layout_width="@dimen/size300dp"
+                android:layout_height="@dimen/size100dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginTop="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:layout_marginBottom="@dimen/size5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/size35sp"
+                android:background=  "@drawable/hard" />
+
+            <ImageButton
+                android:id="@+id/master"
+                android:layout_width="@dimen/size300dp"
+                android:layout_height="@dimen/size100dp"
+                android:layout_marginLeft="@dimen/size5dp"
+                android:layout_marginTop="@dimen/size5dp"
+                android:layout_marginRight="@dimen/size5dp"
+                android:layout_marginBottom="@dimen/size5dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/size35sp"
+                android:background=  "@drawable/master" />
+            <TextView
+                android:id="@+id/rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                android:text="戰鬥規則：請在不要讓任一隻喵咪死亡的情況下打敗敵人吧！如果喵咪死亡的話其他喵咪會很難過的。･ﾟ･(つд`ﾟ)･ﾟ･" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom = 'true'
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_alignParentLeft='true'
+                android:id="@+id/home"
+                android:layout_width="@dimen/size80dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="主窩" />
+
+            <Button
+                android:id="@+id/character"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size100dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="喵咪" />
+
+            <Button
+                android:id="@+id/team"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size200dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="編隊" />
+
+            <Button
+                android:id="@+id/gacha"
+                android:layout_alignParentRight='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="召喚" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

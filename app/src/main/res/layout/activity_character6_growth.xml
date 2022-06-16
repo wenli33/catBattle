@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="265dp">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_alignParentTop='true'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size5dp">
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_weight = "0.2"
+                android:layout_height="wrap_content"
+                android:textSize = "@dimen/size20sp"
+                android:text="等級:" />
+
+            <TextView
+                android:id="@+id/rank_rank"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.15"
+                android:textSize = "@dimen/size20sp"
+                android:text="錢：" />
+
+            <TextView
+                android:id="@+id/money_money"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.45"
+                android:textSize = "@dimen/size20sp"
+                />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="@dimen/size0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "0.1"
+                android:textSize = "@dimen/size20sp"
+                android:text="G" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size500dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/character6"
+                    android:layout_width="@dimen/size150dp"
+                    android:layout_height="@dimen/size150dp"
+                    android:layout_marginLeft="@dimen/size3dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size3dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/orange_triangle"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        >
+                        <TextView
+                            android:id="@+id/name_name_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="橘色三角形喵咪"
+                            android:textSize="@dimen/size30sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        >
+                        <TextView
+                            android:id="@+id/level_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="等級:"
+                            android:textSize="@dimen/size30sp" />
+                        <TextView
+                            android:id="@+id/rank_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:textSize="@dimen/size30sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        >
+                        <Button
+                            android:id="@+id/character6_rankup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/size3dp"
+                            android:layout_marginTop="@dimen/size3dp"
+                            android:layout_marginRight="@dimen/size3dp"
+                            android:layout_marginBottom="@dimen/size3dp"
+                            android:background=  "@drawable/button_blue"
+                            android:textSize="@dimen/size30sp"
+                            android:text="升等" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/attack_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight = "0.2"
+                        android:textSize = "@dimen/size30sp"
+                        android:text="攻擊:"/>
+                    <TextView
+                        android:id="@+id/attack_attack_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight = "0.3"
+                        android:textSize = "@dimen/size30sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/hp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight = "0.2"
+                        android:textSize = "@dimen/size30sp"
+                        android:text="生命:" />
+                    <TextView
+                        android:id="@+id/hp_hp_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight = "0.3"
+                        android:textSize = "@dimen/size30sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/introduction_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:textSize = "@dimen/size30sp"
+                    android:text="橘色的三角形喵咪！可愛的外表讓人無法抵抗！似乎為了不要被當成圓滾滾喵咪的同類所以有在努力健身！？" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/size3dp">
+
+                <ImageButton
+                    android:id="@+id/character6_skill_1"
+                    android:layout_width="@dimen/size80dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/attack1"
+                    />
+
+                <ImageButton
+                    android:id="@+id/character6_skill_2"
+                    android:layout_width="@dimen/size80dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/strengthen"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/character6_skill_3"
+                    android:layout_width="@dimen/size80dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:background="@drawable/attack3"
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size10dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/character6_skill_1_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/character6_skill_2_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/character6_skill_3_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:layout_marginLeft="@dimen/size10dp"
+                    android:layout_marginTop="@dimen/size3dp"
+                    android:layout_marginRight="@dimen/size10dp"
+                    android:layout_marginBottom="@dimen/size3dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom = 'true'
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_alignParentLeft='true'
+                android:id="@+id/home"
+                android:layout_width="@dimen/size80dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="主窩" />
+
+            <Button
+                android:id="@+id/character"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size100dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="喵咪" />
+
+            <Button
+                android:id="@+id/team"
+                android:layout_centerVertical='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size200dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="編隊" />
+
+            <Button
+                android:id="@+id/gacha"
+                android:layout_alignParentRight='true'
+                android:layout_weight="1"
+                android:layout_width="@dimen/size80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size3dp"
+                android:layout_marginTop="@dimen/size3dp"
+                android:layout_marginRight="@dimen/size3dp"
+                android:layout_marginBottom="@dimen/size3dp"
+                android:textSize="@dimen/size10sp"
+                android:background=  "@drawable/button_blue"
+                android:text="召喚" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

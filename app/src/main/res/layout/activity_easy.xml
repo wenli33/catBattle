@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_white"
+    tools:context=".easy">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="259dp">
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_alignParentTop='true'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background=  "@drawable/button_blue"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="||" />
+            <TextView
+                android:id="@+id/turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize = "@dimen/size20sp"
+                android:layout_marginLeft="@dimen/size20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="現在是黑色圓型喵咪的回合" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/state"
+            android:layout_below="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="294dp"
+                tools:layout_editor_absoluteY="259dp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/blackCircle"
+                    android:layout_width="@dimen/size50dp"
+                    android:layout_height="@dimen/size50dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/black_triangle" />
+                <TextView
+                    android:id="@+id/blackCircle_HP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "@dimen/size15sp"
+                    android:gravity="right"
+                    android:text="2500\n/2500" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="294dp"
+                tools:layout_editor_absoluteY="259dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/blackCarton"
+                    android:layout_width="@dimen/size50dp"
+                    android:layout_height="@dimen/size50dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/black_carton" />
+                <TextView
+                    android:id="@+id/blackCarton_HP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "@dimen/size15sp"
+                    android:gravity="right"
+                    android:text="2500\n/2500" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="294dp"
+                tools:layout_editor_absoluteY="259dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/orangeCarton"
+                    android:layout_width="@dimen/size50dp"
+                    android:layout_height="@dimen/size50dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/orange_carton" />
+                <TextView
+                    android:id="@+id/orangeCarton_HP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "@dimen/size15sp"
+                    android:gravity="right"
+                    android:text="2500\n/2500" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/battle_main"
+            android:layout_below="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size450dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="259dp"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_alignParentLeft='true'
+                    android:id="@+id/blackCircle_battle"
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/size15dp"
+                    android:background="@drawable/black_circle" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id = "@+id/popup"
+                android:layout_below="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/blackCarton_battle"
+                    android:layout_alignParentLeft='true'
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/black_carton" />
+                <ImageView
+                    android:id="@+id/rabbit"
+                    android:layout_alignParentRight='true'
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:layout_marginLeft="@dimen/size50dp"
+                    android:layout_marginRight="@dimen/size30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/size15dp"
+                    android:background="@drawable/rabbit" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/orangeCarton_battle"
+                    android:layout_alignParentLeft='true'
+                    android:layout_width="@dimen/size100dp"
+                    android:layout_height="@dimen/size100dp"
+                    android:layout_marginLeft="@dimen/size15dp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/size15dp"
+                    android:background="@drawable/orange_carton" />
+                <TextView
+                    android:id="@+id/rabbit_HP"
+                    android:layout_alignParentRight='true'
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize = "@dimen/size20sp"
+                    android:layout_marginLeft="@dimen/size70dp"
+                    android:layout_marginRight="@dimen/size30dp"
+                    android:gravity="right"
+                    android:text="2500/2500" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/battle_main"
+            android:layout_alignParentBottom='true'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+            <ImageButton
+                android:layout_alignParentLeft='true'
+                android:id="@+id/skill1"
+                android:layout_width="@dimen/size100dp"
+                android:layout_height="@dimen/size80dp"
+                android:layout_marginLeft="@dimen/size15dp"
+                android:layout_marginTop="@dimen/size15dp"
+                android:background="@drawable/attack1"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/skill2"
+                android:layout_toRightOf = '@+id/skill1'
+                android:layout_width="@dimen/size100dp"
+                android:layout_height="@dimen/size80dp"
+                android:layout_marginLeft="@dimen/size15dp"
+                android:layout_marginTop="@dimen/size15dp"
+                android:background="@drawable/attack1"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:layout_alignParentRight='true'
+                android:id="@+id/skill3"
+                android:layout_width="@dimen/size100dp"
+                android:layout_height="@dimen/size80dp"
+                android:layout_marginLeft="@dimen/size15dp"
+                android:layout_marginTop="@dimen/size15dp"
+                android:background="@drawable/attack1"
+                android:layout_weight="1"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

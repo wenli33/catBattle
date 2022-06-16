@@ -1,0 +1,37 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape>
+            <solid
+                android:color="#5599FF" />
+            <!--形狀填充的顏色-->
+            <!--stroke描邊-->
+            <corners
+                android:radius="@dimen/size120dp" />
+            <!--圓角，只適用rectangle-->
+            <padding
+                android:left="@dimen/size10dp"
+                android:top="@dimen/size10dp"
+                android:right="@dimen/size10dp"
+                android:bottom="@dimen/size10dp" />
+            <!--內容與形狀邊界的內間距-->
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#5599FF"
+                android:centerColor="#99BBFF"
+                android:endColor="	#0066FF"
+                android:angle="270" />
+            <corners
+                android:radius="@dimen/size50dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+
+</selector>
